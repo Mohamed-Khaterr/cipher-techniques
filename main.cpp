@@ -78,9 +78,10 @@ int main(){
     return 0;
 }
 
-
+// hello
+// key = 3
 void caeser_encrypt(){
-    cout<<"Caeser Cipher (Encrypt)"<<endl;
+    cout<<"\n Caeser Cipher (Encrypt) \n"<<endl;
     string message;
     cout<< "Enter the message: "; cin>>message;
 
@@ -106,7 +107,8 @@ void caeser_encrypt(){
     cout<<"Cipher Text is:  " <<C<<endl;
 }
 
-
+// khoor
+// key = 3
 void caeser_decrypt(){
     cout<<"\n Caeser Cipher (Decrypt)\n"<<endl;
     string message;
@@ -125,9 +127,10 @@ void caeser_decrypt(){
     string P;
 
     for(int i = 0; i < msgLength; i++){
+        //get the index of message letter in message
         int C = distance(alphabet, find(alphabet, alphabet + 26, charMessage[i]));
 
-        int index = (C - key)%26;
+        int index = ((C - key)%26);
         P += alphabet[index];
     }
 
@@ -135,7 +138,8 @@ void caeser_decrypt(){
 }
 
 //--------------------------------------------------------------------------------
-
+// hello
+// key = meme
 void poly_encrypt(){
     cout<<"\n Poly Alphabetic Cipher (Encrypt)\n"<<endl;
 
@@ -187,7 +191,8 @@ void poly_encrypt(){
 
 }
 
-
+// tixpa
+// key = meme
 void poly_decrypt(){
     cout<<"\n Poly Alphabetic Cipher (Decrypt)\n"<<endl;
 
@@ -240,6 +245,9 @@ void poly_decrypt(){
 }
 
 //--------------------------------------------------------------------------------
+
+// hello
+// key = hey
 void transposition_encrypt() {
     cout<<"\n Transposition Cipher (Encrypt)\n"<<endl;
 
